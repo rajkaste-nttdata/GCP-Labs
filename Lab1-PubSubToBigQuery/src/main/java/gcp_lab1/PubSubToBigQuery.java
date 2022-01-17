@@ -38,11 +38,11 @@ public class PubSubToBigQuery {
 
         @Description("BigQuery table name")
         String getTableName();
-        void setTableName(String outputTableName);
+        void setTableName(String tableName);
 
         @Description("PubSub Subscription")
         String getSubTopic();
-        void setSubTopic(String subscription);
+        void setSubTopic(String subTopic);
 
         @Description("DLQ topic")
         String getDlqTopic();

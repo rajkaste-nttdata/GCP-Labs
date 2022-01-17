@@ -33,7 +33,7 @@ mvn compile exec:java \
 {"id": N, "name": "name1", "surname": "name2"}
 
 ## extras
-projects/${PROJECT_ID}/topics/uc1-input-topic-13
+projects/${PROJECT_ID}/topics/uc1-input-topic-13 \
 --inputTopic=$TOPIC \
-projects/nttdata-c4e-bde/subscriptions/uc1-input-topic-sub-13
---allowedLateness=0 \
+projects/nttdata-c4e-bde/subscriptions/uc1-input-topic-sub-13 \
+--allowedLateness=0 

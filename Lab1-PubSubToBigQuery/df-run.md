@@ -17,7 +17,7 @@ mvn compile exec:java \
 -Dexec.args=" \
 --subTopic=projects/nttdata-c4e-bde/subscriptions/uc1-input-topic-sub-13 \
 --tableName=uc1_13.account \
---dlqTopic=projects/nttdata-c4e-bde/topics/uc1-input-topic-13 \
+--dlqTopic=projects/nttdata-c4e-bde/topics/uc1-dlq-topic-13 \
 --runner=DataflowRunner \
 --project=nttdata-c4e-bde \
 --jobName=usecase1-labid-$LAB_ID \

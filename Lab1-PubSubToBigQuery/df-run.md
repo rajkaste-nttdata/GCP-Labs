@@ -1,11 +1,11 @@
 ## Set up environment variables
-export PROJECT_ID=$(gcloud config get-value project)
-export REGION='europe-west4'
-export PIPELINE_FOLDER=gs://${PROJECT_ID}
-export MAIN_CLASS_NAME=gcp_lab1.PSTBQ
-export RUNNER=DataflowRunner
-export LAB_ID=13
-export TOPIC=projects/${PROJECT_ID}/topics/uc1-input-topic-13
+export PROJECT_ID=$(gcloud config get-value project) \
+export REGION='europe-west4' \
+export PIPELINE_FOLDER=gs://${PROJECT_ID} \
+export MAIN_CLASS_NAME=gcp_lab1.PubSubToBigQuery \
+export RUNNER=DataflowRunner \
+export LAB_ID=13 \
+export TOPIC=projects/${PROJECT_ID}/topics/uc1-input-topic-13 \
 
 ## Download dependencies listed in pom.xml
 mvn clean dependency:resolve

@@ -1,5 +1,5 @@
 with row_count as(
-select year,Movie_Title,Production_Budget,ROW_NUMBER() OVER(PARTITION BY year ORDER BY Production_Budget DESC) AS rank
+select year,Movie_Title,Production_Budget,ROW_NUMBER() OVER(PARTITION BY year) AS rank
 from
 (SELECT
 EXTRACT(YEAR FROM Release_Date) AS year,Movie_Title,Production_Budget
